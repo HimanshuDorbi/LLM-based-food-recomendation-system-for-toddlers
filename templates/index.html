@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Food Recommendation System for Toddlers</h1>
+    <form id="uploadForm">
+        <label for="productImage">Upload Product Images:</label>
+        <input type="file" id="productImage" multiple>
+        <label for="ageBracket">Age Bracket:</label>
+        <select id="ageBracket">
+            <option value="0-1">0-1 years</option>
+            <option value="1-2">1-2 years</option>
+            <option value="2-3">2-3 years</option>
+        </select>
+        <button type="submit">Upload</button>
+    </form>
+    <div id="output"></div>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
